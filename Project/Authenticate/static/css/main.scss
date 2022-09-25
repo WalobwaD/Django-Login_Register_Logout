@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Rubik+Distressed&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$font-1: 'Aboreto', cursive;
+$font-2: 'Bebas Neue', cursive;
+$font-3: 'Comfortaa', cursive;
+$font-4: 'Rubik Distressed', cursive;
+$font-5: 'Silkscreen', cursive;
+body{
+    // background-image: url('images/waterbg.jpg');
+    overflow-x: hidden;
+    background-color: aliceblue;
+    .intro{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        line-height:100px;
+
+        h1{
+            font-family: $font-4;
+        }
+        p{
+            font-family: $font-3;
+        }
+    }
+    .register{
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+        background-color: black;
+        line-height: 39px;
+        display: block;
+        color: aliceblue;
+    }
+    .login{
+        position: absolute;
+        top:20%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+        line-height: 30px;
+    }
+}

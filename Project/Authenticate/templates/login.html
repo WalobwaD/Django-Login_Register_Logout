@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+    <dix class="login bg-gray-900 w-80 shadow-xl p-3 rounded text-center ">
+        <h3 class="text-blue-500 font-bold text-3xl p-4"> LogIn!</h3>
+        <div class="">
+            <form method = 'POST' action="{% url 'login' %}">
+                {% csrf_token %}
+                <label for="username" class="text-white font-bold p-2">Enter Username:</label><br>
+                <input type="text" name="username" placeholder="username" class="text-blue-800 form-control"><br>
+                <label for="password" class="text-white font-bold p-2">Enter Password:</label><br>
+                <input type="password" name="password" placeholder="Password" class="form-control"><br>
+                <button type="submit" class="bg-blue-600 p-2 rounded mt-3 font-bold text-white">LogIn</button>
+
+            </form>
+        </div>
+    </dix>
+{% endblock %}

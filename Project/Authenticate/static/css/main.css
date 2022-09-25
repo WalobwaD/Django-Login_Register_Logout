@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Rubik+Distressed&family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+body .intro {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+}
+body .intro h1 {
+  font-family: "Rubik Distressed", cursive;
+}
+body .intro p {
+  font-family: "Comfortaa", cursive;
+}
+body .register {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 30%;
+  text-align: center;
+  background-color: black;
+  line-height: 39px;
+  display: block;
+  color: aliceblue;
+}
+body .login {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

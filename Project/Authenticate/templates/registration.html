@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block title %}
+    Registration
+{% endblock %}
+{% block content %}
+    {% if registered %}
+        <p>Thanks For Registering</p>
+        {% else %}
+    <div class="register px-4 shadow-2xl shadow-black-900 rounded">
+    <h3 class="text-blue-500 font-bold p-2 mt-2 text-3xl">Register here!</h3>
+    <form method='POST' enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        <button type="submit" class="bg-blue-300 text-white px-5 py-1 m-4 rounded">Register</button>
+    </form>
+    </div>
+    {% endif %}
+{% endblock %}

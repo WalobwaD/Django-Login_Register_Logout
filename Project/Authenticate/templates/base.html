@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>{% block title %}{% endblock %} | Walobwa</title>
+</head>
+<body>
+    <header>
+        <nav class="bg-blue-500 flex justify-between items-center w-screen fixed p-3 shadow-2xl">
+            <div class="logo font-bold text-2xl ml-8 text-white">
+                Aqua Daive<span class="fa-solid fa-droplet px-2"></span>
+            </div>
+            <div class="nav-items text-white">
+                <a href="{% url 'home' %}" class="mx-3 hover:text-black">Home</a>
+                <a href="#" class="mx-3 hover:text-black">About</a>
+                <a href="#" class="mx-3 hover:text-black">Contact</a>
+                
+
+                {% if user.is_authenticated %}
+                <a href="#" class="mx-3"><span class="fa-solid fa-cart-shopping"></span></a>
+                <a href="#" class="mx-3"><span class="fa-solid fa-user"></span></a>
+                <a href="{% url 'logout' %}" class="mx-3 hover:text-black">Logout</a>
+                
+                {% else %}
+                <a href="{% url 'register' %}" class="mx-3 hover:text-black">Register</a>
+                <a href="{% url 'login' %}" class="mx-3 hover:text-black">Login</a>
+                {% endif %}
+
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" i
+    ntegrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
