@@ -17,11 +17,11 @@
 </head>
 <body>
     <header>
-        <nav class="bg-blue-500 flex justify-between items-center w-screen fixed p-3 shadow-2xl">
-            <div class="logo font-bold text-2xl ml-8 text-white">
+        <nav class="bg-gray-100 flex justify-between items-center w-screen fixed p-3 shadow-2xl">
+            <div class="logo font-bold text-2xl ml-8 text-blue-500">
                 Aqua Daive<span class="fa-solid fa-droplet px-2"></span>
             </div>
-            <div class="nav-items text-white">
+            <div class="nav-items text-gray-800 font-bold">
                 <a href="{% url 'home' %}" class="mx-3 hover:text-black">Home</a>
                 <a href="#" class="mx-3 hover:text-black">About</a>
                 <a href="#" class="mx-3 hover:text-black">Contact</a>
@@ -33,8 +33,8 @@
                 <a href="{% url 'logout' %}" class="mx-3 hover:text-black">Logout</a>
                 
                 {% else %}
-                <a href="{% url 'register' %}" class="mx-3 hover:text-black">Register</a>
-                <a href="{% url 'login' %}" class="mx-3 hover:text-black">Login</a>
+                <a href="{% url 'register' %}" class="reg mx-3 hover:text-black">Register</a> |
+                <a href="{% url 'login' %}" class="log mx-3 hover:text-black">Login</a>
                 {% endif %}
 
             </div>

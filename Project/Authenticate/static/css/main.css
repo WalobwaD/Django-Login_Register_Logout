@@ -8,6 +8,36 @@
 body {
   overflow-x: hidden;
   background-color: aliceblue;
+  overflow: hidden;
+}
+body header {
+  z-index: 99;
+  background-color: whitesmoke;
+}
+body header nav {
+  z-index: 99;
+}
+body header nav .reg {
+  border: 1px solid #00bfff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+body header nav .reg:hover {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+}
+body header nav .log {
+  border: 1px solid #00bfff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+body header nav .log:hover {
+  background-color: #00bfff;
+  border: none;
+  color: white;
 }
 body .intro {
   position: absolute;
@@ -22,16 +52,28 @@ body .intro h1 {
 body .intro p {
   font-family: "Comfortaa", cursive;
 }
+body .intro img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 30%;
+}
 body .register {
   position: absolute;
   top: 15%;
-  left: 35%;
+  left: 39%;
   width: 30%;
   text-align: center;
   background-color: black;
   line-height: 39px;
   display: block;
   color: aliceblue;
+  opacity: 50%;
+}
+body .svgr {
+  width: 40%;
+  position: absolute;
+  top: 30px;
 }
 body .login {
   position: absolute;

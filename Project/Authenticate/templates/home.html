@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
+Home
 {% endblock %}
 {% block content %}
     <div class="intro">
         <h1 class="text-4xl text-blue-600 ">Aqua-Daive<span class="fa-solid fa-droplet"></span></h1>
         <p class="text-3xl ">Sweetness in every drop!</p>
+        <img src="{% static 'images/Water drop-rafiki.svg' %}">
     </div>
 {% endblock %}

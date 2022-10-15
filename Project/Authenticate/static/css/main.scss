@@ -13,6 +13,39 @@ body{
     // background-image: url('images/waterbg.jpg');
     overflow-x: hidden;
     background-color: aliceblue;
+    overflow: hidden;
+
+    header{
+        z-index:99;
+        background-color: whitesmoke;
+        nav{
+            z-index: 99;
+            .reg{
+                border: 1px solid #00bfff;
+                padding: 10px 15px;
+                border-radius: 25px;
+                transition: 0.2s;
+            }
+            
+            .reg:hover{
+                background-color: #00bfff;
+                border: none;
+                color: white;
+            }
+            .log{
+                border: 1px solid #00bfff;
+                padding: 8px 15px;
+                border-radius: 25px;
+                transition: 0.2s;
+            }
+
+            .log:hover{
+                background-color: #00bfff;
+                border: none;
+                color: white;
+            }
+        }
+    }
     .intro{
         position: absolute;
         top: 40%;
@@ -26,17 +59,32 @@ body{
         p{
             font-family: $font-3;
         }
+
+        img{
+            position: absolute;
+            top:50%;
+            left: 35%;
+            width: 30%;
+        }
     }
     .register{
         position: absolute;
         top: 15%;
-        left: 35%;
+        left: 39%;
         width: 30%;
         text-align: center;
         background-color: black;
         line-height: 39px;
         display: block;
         color: aliceblue;
+        opacity: 50%;
+
+    }
+    
+    .svgr{
+        width: 40%;
+        position: absolute;
+        top:30px;
     }
     .login{
         position: absolute;
